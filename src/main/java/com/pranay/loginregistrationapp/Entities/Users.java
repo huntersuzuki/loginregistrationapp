@@ -8,6 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.Data;
 
 @Entity
@@ -28,6 +29,7 @@ public class Users {
     @NotBlank
     private String userPassword;
     @NotNull
+    @Size(max = 10, min = 10)
     private Long userPhone;
     @NotNull
     @NotBlank
@@ -38,4 +40,5 @@ public class Users {
     @NotNull
     @NotBlank
     private String userAddress;
+   
 }
