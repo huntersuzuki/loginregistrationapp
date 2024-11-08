@@ -19,7 +19,7 @@ public class UserLoginService {
             return "Log in successful";
         } else {
 
-            return "log in failed";
+            return "Log in failed";
         }
     }
 
