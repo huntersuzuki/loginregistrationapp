@@ -16,10 +16,10 @@ public class UserLoginService {
         Users email = usersRepo.findByUserEmail(users.getUserEmail());
         Users password = usersRepo.findByUserPassword(users.getUserPassword());
         if (email != null && password != null) {
-            return "Log in successful";
+            return "Log in Successful";
         } else {
 
-            return "Log in failed";
+            return "Log in Failed";
         }
     }
 
